@@ -4,7 +4,7 @@
 :root {
     --c-dark: #0B293F;
     --c-brand: #118511;
-    --c-brand-light: #45d845;
+    --c-brand-light: #6cf86c;
     --c-brand-rgb: 17, 133, 17;
     --c-body: #4b4b4b;
     --c-font-base: "CabinetGrotesk", sans-serif;
@@ -29,6 +29,20 @@ h1, h2, h3, h4, h5, h6 {
 
 a{
     text-decoration: none;
-    color: var(--c-brand-light);
+    color: var(--c-dark);
     transition: var(--transition);
+}
+
+a:hover {
+    color: var(--c-brand);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding{
+    padding-top: 140px;
+    padding-bottom: 140px;
 }
