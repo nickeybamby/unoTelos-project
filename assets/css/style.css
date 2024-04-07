@@ -28,11 +28,13 @@ body {
 .h1 .h2 .h3 .h4 .h5 .h6 {
     font-weight: 600;
     font-family: var(--c-font-base);
+    color: var(--c-dark);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     font-family: var(--c-font-base);
+    color: var(--c-dark);
 }
 
 a {
@@ -99,3 +101,23 @@ img {
 #hero {
     background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(../images/showcase-bg.png);
 }
+
+/* SECTION TITLE */
+.section-title {
+    margin-bottom: 60px;
+}
+
+.section-title .line{
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px auto;
+}
+
+/* .section-title p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
