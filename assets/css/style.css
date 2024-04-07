@@ -1,10 +1,12 @@
 @import url(../css/cabinet-grotesk.css);
 @import url(../css/author.css);
 
+/* VARIABLES */
 :root {
     --c-dark: #0B293F;
+    --c-dark-light: #114d79;
     --c-brand: #118511;
-    --c-brand-light: #6cf86c;
+    --c-brand-light: #1ebb1e;
     --c-brand-rgb: 17, 133, 17;
     --c-body: #4b4b4b;
     --c-font-base: "CabinetGrotesk", sans-serif;
@@ -13,36 +15,80 @@
     --transition: all 0.5s ease;
 }
 
-body{
+/* RESET */
+body {
     font-family: var(--c-font-body);
     line-height: 1.7;
     color: var(--c-body);
 }
 
+/* FONTS */
 .h1 .h2 .h3 .h4 .h5 .h6 {
     font-weight: 600;
+    font-family: var(--c-font-base);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
+    font-family: var(--c-font-base);
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--c-dark);
     transition: var(--transition);
 }
 
 a:hover {
-    color: var(--c-brand);
+    color: var(--c-dark-light);
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
 
-.section-padding{
+.section-padding {
     padding-top: 140px;
     padding-bottom: 140px;
+}
+
+/* NAVBAR */
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--c-dark);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--c-brand);
+}
+
+/* BTN */
+.btn {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 10px 24px;
+}
+
+.btn-brand {
+    background-color: var(--c-brand);
+    border-color: var(--c-brand);
+    color: white;
+}
+
+.btn-brand:hover {
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+    color: white;
+}
+
+/* HERO */
+#hero {
+    
 }
