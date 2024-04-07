@@ -1,0 +1,32 @@
+/**
+* @license
+*
+* Font Family: Kalam
+* Designed by: Indian Type Foundry
+* URL: https://www.fontshare.com/fonts/kalam
+* © 2024 Indian Type Foundry
+*
+* Kalam Light 
+* Kalam Regular 
+* Kalam Bold 
+* Kalam Variable (Variable font)
+
+*
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 300.0;
+*
+* available axes:
+'wght' (range from 300.0 to 700.0
+*/
+@font-face {
+  font-family: 'Kalam';
+  src: url('../fonts/Kalam-Variable.woff2') format('woff2'),
+       url('../fonts/Kalam-Variable.woff') format('woff'),
+       url('../fonts/Kalam-Variable.ttf') format('truetype');
+  font-weight: 300 700;
+  font-display: swap;
+  font-style: normal;
+}
+
