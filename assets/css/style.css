@@ -8,6 +8,7 @@
     --c-dark-light: #114d79;
     --c-brand: #118511;
     --c-brand-light: #1ebb1e;
+    --c-bg-drop: #E9F6FF;
     --c-brand-rgb: 11, 41, 63;
     --c-body: #4b4b4b;
     --c-font-base: "CabinetGrotesk", sans-serif;
@@ -55,6 +56,10 @@ img {
 .section-padding {
     padding-top: 140px;
     padding-bottom: 140px;
+}
+
+.theme-shadow {
+    box-shadow: var(--box-shadow);
 }
 
 .fancy {
@@ -115,9 +120,12 @@ img {
     margin: 16px auto 24px auto;
 }
 
-/* .section-title p {
+.section-title p {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
-} */
+} 
 
+#about{
+    background-color: var(--c-bg-drop);
+}
