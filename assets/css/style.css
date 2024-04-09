@@ -162,6 +162,7 @@ img {
     color: white;
 }
 
+/* PORTFOLIO */
 .portfolio {
     border-radius: 10px;
     background-color: var(--c-dark);
@@ -188,4 +189,9 @@ img {
 
 .portfolio h5 {
     color: white;
+}
+
+/* REVIEWS */
+#reviews{
+    background-color: var(--c-bg-drop);
 }
