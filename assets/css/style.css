@@ -17,6 +17,10 @@
     --c-font-fancy: "Kalam", cursive;
     --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
     --transition: all 0.5s ease;
+    --total-brand: 11;
+    --logo-width: 12rem;
+    --total-logo-width: calc(var(--total-brand) * var(--logo-width) * 2);
+    --animation-duration: calc(var(--total-brand) * 2s);
 }
 
 /* RESET */
@@ -209,4 +213,58 @@ img {
     bottom: -14px;
     background-color: white;
     transform: rotate(45deg);
+}
+
+/* PARTNERS */
+.slider {
+    position: relative;
+    width: 100vw;
+    height: 12rem;
+    background-color: #fff;
+    box-shadow: 0 .8rem 1.4rem -.2rem #0001;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider::before,
+.slider::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: var(--logo-width);
+}
+
+.slider::before {
+    left: 0;
+    background: linear-gradient(to right, #fff 0%, #fff0 100%);
+}
+
+.slider::after {
+    right: 0;
+    background: linear-gradient(to left, #fff 0%, #fff0 100%);
+}
+
+.slider ul.brands {
+    list-style: none;
+    width: var(--total-logo-width);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    animation: slideLeft var(--animation-duration) linear infinite;
+}
+
+.slider:hover ul.brands {
+    animation-play-state: paused;
+}
+
+@keyframes slideLeft {
+    100%{
+        transform: translateX(calc(-100% /2));
+    }
+}
+
+ul.brands li.brand-logo {
+    width: var(--logo-width);
+    margin-left: 3rem;
 }

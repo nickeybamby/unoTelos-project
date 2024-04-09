@@ -349,8 +349,46 @@
       </div>
     </section>
     
+    <!-- PARTNERS -->
+    <section id="partners" class="section-padding">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <h1 class="display-4 fw-semibold">Partners</h1>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="slider">
+          <ul class="brands">
+            <li class="brand-logo"> <img src="/assets/images/mtn.svg" alt=""></li>
+            <li class="brand-logo"><img src="/assets/images/airtel.svg" alt=""></li>
+            <li class="brand-logo"><img src="/assets/images/9-mobile.svg" alt=""></li>
+            <li class="brand-logo"><img src="/assets/images/lng.svg" alt=""></li>
+            <li class="brand-logo"><img src="/assets/images/chevron.svg" alt=""></li>
+            <li class="brand-logo"><img src="/assets/images/nspower.svg" alt=""></li>
+            <li class="brand-logo"><img src="/assets/images/jb.svg" alt=""></li>
+            <li class="brand-logo"><img src="/assets/images/airforce.svg" alt=""></li>
+            <li class="brand-logo"><img src="/assets/images/provast.svg" alt=""></li>
+            <li class="brand-logo"><img src="/assets/images/wav.svg" alt=""></li>
+            <li class="brand-logo"><img src="/assets/images/BI.svg" alt=""></li>
+          </ul>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    <script>
+    
+      const brands = document.querySelector('ul.brands'),
+        total_brand = brands.children.length;
+
+        document.documentElement.style.setProperty('--total-brand', total_brand); 
+        for(let i =0; i< total_brand; i++) {
+          brands.appendChild(brands.children[i].cloneNode(true));
+        }
+     </script>
 </body>
 </html>
 
