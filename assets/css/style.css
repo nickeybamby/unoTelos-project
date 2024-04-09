@@ -192,6 +192,21 @@ img {
 }
 
 /* REVIEWS */
-#reviews{
+#reviews {
     background-color: var(--c-bg-drop);
+}
+
+.review-head {
+    position: relative;
+    border-radius: 7px;
+}
+
+.review-head::after {
+    content: '';
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    bottom: -14px;
+    background-color: white;
+    transform: rotate(45deg);
 }
