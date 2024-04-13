@@ -322,7 +322,7 @@ footer .line {
 .social-icons a {
     width: 40px;
     height: 40px;
-    margin-top: 40px;
+    margin: 40px 0;
     display: inline-flex;
     align-items: center;
     justify-content: center; 
@@ -337,6 +337,12 @@ footer .line {
 .social-icons a:hover {
     background-color: var(--c-brand);
     color: #E9F6FF;
+}
+
+.footer-top input {
+    border-radius: 5px;
+    padding: 8px;
+    outline: none;
 }
 
 html{
