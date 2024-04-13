@@ -281,6 +281,16 @@ ul.brands li.brand-logo {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.footer-top .sitemap a{
+    transition: var(--transition);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-top .sitemap a:hover {
+    color: var(--c-brand-light);
+    transform: translateX(4px);
+}
+
 .footer-bottom {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -318,6 +328,10 @@ footer .line {
     justify-content: center; 
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 100px;
+}
+
+.sitemap {
+    display: flex;
 }
 
 .social-icons a:hover {
